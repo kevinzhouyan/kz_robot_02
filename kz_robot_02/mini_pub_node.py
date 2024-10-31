@@ -22,10 +22,10 @@ class MiniPubNode(Node):
 
 def main(args=None):
     try:
-        with rclpy.init(args=args):
-            mini_publisher = MiniPubNode()
+        rclpy.init(args=args)
+        mini_publisher = MiniPubNode()
 
-            rclpy.spin(mini_publisher)
+        rclpy.spin(mini_publisher)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 

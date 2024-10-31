@@ -20,10 +20,10 @@ class MiniSubNode(Node):
 
 def main(args=None):
     try:
-        with rclpy.init(args=args):
-            mini_subscriber = MiniSubNode()
+        rclpy.init(args=args)
+        mini_subscriber = MiniSubNode()
 
-            rclpy.spin(mini_subscriber)
+        rclpy.spin(mini_subscriber)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 
