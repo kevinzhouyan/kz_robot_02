@@ -22,6 +22,8 @@ setup(
         'console_scripts': [
             'kz_mini_pub_node = kz_robot_02.mini_pub_node:main',
             'kz_mini_sub_node = kz_robot_02.mini_sub_node:main',
+            'kz_sum_service = services.add_two_num_service:main',
+            'kz_sum_client = services.add_two_num_client:main',
         ],
     },
 )
