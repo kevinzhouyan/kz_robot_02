@@ -4,7 +4,7 @@ package_name = 'kz_robot_02'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='1.0.0',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'kz_mini_pub_node = kz_robot_02.mini_pub_node:main',
-            'kz_mini_sub_node = kz_robot_02.mini_sub_node:main'
+            'kz_mini_sub_node = kz_robot_02.mini_sub_node:main',
         ],
     },
 )
